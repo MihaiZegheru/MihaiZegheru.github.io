@@ -4,9 +4,13 @@ body {
 }
 
 
+.fadeImg {
+  position: relative;
+}
+
 @media (max-aspect-ratio: 20/1) and (min-aspect-ratio: 1/1){
   .fadeImg img{
-    height: 80vh;
+    height: 87vh;
     width: 100vw;
     margin-right: -100%;
     float: left;
@@ -67,8 +71,8 @@ body {
 
 .project-row {
   display: block;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
 }
 
 .middle-cell{

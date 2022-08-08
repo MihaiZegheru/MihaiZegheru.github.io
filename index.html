@@ -1,1 +1,148 @@
-Hello
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+  <link rel="stylesheet" href="./public/styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+</head>
+
+<body style="font-family:Verdana;">
+    <div>
+        <div class="fadeImg" style="background-color:#f1f1f1;">
+            <img class="slide" src="./public/res/pictures/MayNight.png">
+            <img class="slide" style="display:none;" src="./public/res/pictures/Fisherman.png">
+            <img class="slide" style="display:none;" src="./public/res/pictures/HowlingWolf.png">
+            <img class="slide" style="display:none;" src="./public/res/pictures/MayNight.png">
+            
+            <div class="container-text-centered-h">H E L L O;</div>
+            <div class="container-text-centered-p">I AM ZDEV. GAME PROGRAMMER, SOFTWARE DEVELOPER</div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="project-row">
+            <div class="side-cell">
+                <a href="https://play.google.com/store/apps/details?id=com.Zdev.Minesweeper&hl=en&gl=US">
+                    <img class="project-image" src="./public/res/projects/Minesweeper.png">
+                    <div class="project-middle">
+                      <div class="project-text">Minesweeper</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="middle-cell">
+              <a href="https://play.google.com/store/apps/details?id=com.ZDev.WarRun&hl=en&gl=US">
+                  <img class="project-image" src="./public/res/projects/WarRun.png">
+                  <div class="project-middle">
+                    <div class="project-text">War Run</div>
+                  </div>
+              </a>
+            </div>
+            <div class="side-cell">
+              <a href="https://play.google.com/store/apps/details?id=com.Zdev.SkyGetaway&hl=en&gl=US">
+                <img class="project-image" src="./public/res/projects/SkyGetaway.png">
+                <div class="project-middle">
+                  <div class="project-text">Sky Getaway</div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="project-row">
+            <div class="project-row">
+                <div class="side-cell">
+                  <a href="">
+                    <img class="project-image" src="./public/res/projects/GameEngine.png">
+                    <div class="project-middle">
+                      <div class="project-text">Game Engine</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="middle-cell">
+                  <a href="">
+                    <img class="project-image" src="./public/res/projects/Shophy.png">
+                    <div class="project-middle">
+                      <div class="project-text">Shophy</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="side-cell">
+                  <a href="">
+                    <img class="project-image" src="./public/res/projects/WorkoutTogether.png">
+                    <div class="project-middle">
+                      <div class="project-text">Workout Together</div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="project-row">
+            <div class="project-row">
+                <div class="side-cell">
+                  <a href="">
+                    <img class="project-image" src="./public/res/projects/Wolves.png">
+                    <div class="project-middle">
+                      <div class="project-text">Wolves</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="middle-cell">
+                  <a href="">
+                    <img class="project-image" src="./public/res/projects/GrappleRun.png">
+                    <div class="project-middle">
+                      <div class="project-text">Grapple Run</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="side-cell">
+                  <a href="/projects/photography">
+                    <img class="project-image" src="./public/res/projects/Photography.png">
+                    <div class="project-middle">
+                      <div class="project-text">Photography</div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <h1>Contact</h1>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+<script type="text/javascript">
+    $next = 1;			
+    var current = 0;		
+    $interval = 7000;	
+    $fadeTime = 1400;	
+    $imgNum = 4;	
+
+ 
+    $(document).ready(function(){
+        $('.fadeImg').css('position','relative');
+        $('.fadeImg img').css({'position':'relative','width':'100%', 'margin-right': '-100%', 'float': 'left'});
+
+        nextFadeIn();
+    });
+ 
+    function nextFadeIn(){
+        $('.fadeImg img').eq(current).delay($interval).fadeOut($fadeTime)
+        .end().eq($next).delay($interval).hide().fadeIn($fadeTime, nextFadeIn);
+            
+
+        if($next < $imgNum-1){ $next++; } else { $next = 0;}
+        if(current < $imgNum-1){ current++; } else { current =0; }
+    };
+
+</script>

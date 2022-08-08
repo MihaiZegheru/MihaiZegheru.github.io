@@ -11,11 +11,12 @@
 
 <body style="font-family:Verdana;">
     <div>
-        <div class="fadeImg" style="background-color:#f1f1f1;">
-            <img class="slide" src="./public/res/pictures/CrystalLake.png">
-            <img class="slide" style="display:none;" src="./public/res/pictures/Firefly.png">
-            <img class="slide" style="display:none;" src="./public/res/pictures/CrystalLake.png">
-            <img class="slide" style="display:none;" src="./public/res/pictures/Firefly.png">
+        <div class="fadeImg slide-container" style="background-color:#f1f1f1;">
+            <img class="slide slide-img" src="./public/res/pictures/Firefly.png">
+            <img class="slide slide-img" style="display:none;" src="./public/res/pictures/CrystalLake.png">
+            <img class="slide slide-img" style="display:none;" src="./public/res/pictures/Werewolf.png">
+            <img class="slide slide-img" style="display:none;" src="./public/res/pictures/MayNight.png">
+            <img class="slide slide-img" style="display:none;" src="./public/res/pictures/Fisherman.png">
             
             <div class="container-text-centered-h">H E L L O;</div>
             <div class="container-text-centered-p">I AM MIHAI. GAME PROGRAMMER, SOFTWARE DEVELOPER</div>
@@ -133,7 +134,6 @@
  
     $(document).ready(function(){
         $('.fadeImg').css('position','relative');
-        $('.fadeImg img').css({'position':'relative','width':'100%', 'margin-right': '-100%', 'float': 'left'});
 
         nextFadeIn();
     });

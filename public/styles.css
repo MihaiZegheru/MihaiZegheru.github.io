@@ -3,6 +3,63 @@ body {
   margin: 0;
 }
 
+
+@media (max-aspect-ratio: 20/1) and (min-aspect-ratio: 1/1){
+  .fadeImg img{
+    height: 80vh;
+    width: 100vw;
+    margin-right: -100%;
+    float: left;
+    object-fit: cover;
+  }
+
+  .container-text-centered-h{
+    position: relative;
+    padding-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 9vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .container-text-centered-p{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (min-aspect-ratio: 1/20) {
+  .fadeImg img{
+    height: 40vh;
+    width: 100vw;
+    margin-right: -100%;
+    float: left;
+    object-fit: cover;
+  }
+
+  .container-text-centered-h{
+    position: relative;
+    padding-top: 20%;
+    color: white;
+    text-align: center;
+    font-size: 14vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .container-text-centered-p{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
 .separator {
   clear: left; 
   padding-top: 1.5vw;
@@ -28,23 +85,9 @@ body {
   float: left
 }
 
-.container-text-centered-h{
-  position: relative;
-  padding-top: 20%;
-  color: white;
-  text-align: center;
-  font-size: 14vw;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-}
 
-.container-text-centered-p{
-  position: relative;
-  color: white;
-  text-align: center;
-  font-size: 2vw;
-  font-family: Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
+
 
 .w3-left, .w3-right, .w3-badge {
   cursor: pointer; 

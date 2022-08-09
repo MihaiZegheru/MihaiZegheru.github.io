@@ -27,12 +27,32 @@ body {
     object-fit: cover;
   }
 
-  .container-text-centered-h{
+  .container-title-centered-h{
     position: relative;
     padding-top: 10%;
     color: white;
     text-align: center;
     font-size: 9vw;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1vw;
+  }
+
+  .container-title-centered-p{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+  }
+
+  .container-text-centered-h{
+    position: relative;
+    padding-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 7vw;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bold;
     letter-spacing: 1vw;
@@ -57,7 +77,7 @@ body {
     object-fit: cover;
   }
 
-  .container-text-centered-h{
+  .container-title-centered-h{
     position: relative;
     padding-top: 20%;
     color: white;
@@ -68,11 +88,31 @@ body {
     letter-spacing: 1vw;
   }
 
-  .container-text-centered-p{
+  .container-title-centered-p{
     position: relative;
     color: white;
     text-align: center;
     font-size: 2vw;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+  }
+
+  .container-text-centered-h{
+    position: relative;
+    padding-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 7vw;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1vw;
+  }
+
+  .container-text-centered-p{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 1.7vw;
     font-family: 'Courier New', monospace;
     font-weight: bold;
   }
@@ -175,5 +215,19 @@ body {
   color: white;
   font-size: 1.4vw;
   font-weight: bold;
+}
+
+.social-media-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
+  height: 14vw;
+}
+
+.social-media-bar a{
+  font-size: 4vw;
+  color: white;
+  display: inline-block;
 }
 

@@ -220,7 +220,6 @@
 
 
     <div class="cr-notice">
-      <div id="message">Please scroll to check if the box is visible</div>
       <p> © 2022 Mihai Zegheru </p>
     </div>
 
@@ -275,12 +274,11 @@
     const homeCircle = document.getElementById('circle-home');
     const projectsCircle = document.getElementById('circle-projects');
     const contactCircle = document.getElementById('circle-contact');
-
-    const message = document.querySelector('#message');
     let isHomeVisible = true;
     let isProjectsVisible = false;
     let isContactVisible = false;
 
+    // BUG WHEN CLICKING AND NOT SCRLOIING IT AINT UPDATING
     document.addEventListener('scroll', function () {
       isHomeVisible = isInViewport(home);
       isProjectsVisible = isInViewport(projects);

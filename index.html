@@ -262,10 +262,56 @@
         );
     }
 
+    const home = document.querySelector(".home");
+    const projects = document.querySelector(".projects");
+    const contact = document.querySelector(".contact");
 
-    const home = document.getElementById('home-nav-widget');
-    const projects = document.getElementById('projects-nav-widget');
-    const contact = document.getElementById('contact-nav-widget');
+    function setNavHome() {
+        homeMenu.style.color = "white";
+        projectsMenu.style.color = "transparent";
+        contactMenu.style.color = "transparent";
+
+        homeCircle.style.fill = "wheat";
+        projectsCircle.style.fill = "transparent";
+        contactCircle.style.fill = "transparent";
+    }
+
+    function setNavProjects() {
+        homeMenu.style.color = "transparent";
+        projectsMenu.style.color = "white";
+        contactMenu.style.color = "transparent";
+
+        homeCircle.style.fill = "transparent";
+        projectsCircle.style.fill = "wheat";
+        contactCircle.style.fill = "transparent";
+    }
+
+    function setNavContact() {
+        homeMenu.style.color = "transparent";
+        projectsMenu.style.color = "transparent";
+        contactMenu.style.color = "white";
+
+        homeCircle.style.fill = "transparent";
+        projectsCircle.style.fill = "transparent";
+        contactCircle.style.fill = "wheat";
+    }
+
+    home.addEventListener('click', function() {
+        setNavHome();
+    })
+
+    projects.addEventListener('click', function() {
+        setNavProjects();
+    })
+
+    contact.addEventListener('click', function() {
+        setNavContact();
+    })
+
+
+    const homeMarker = document.getElementById('home-nav-widget');
+    const projectsMarker = document.getElementById('projects-nav-widget');
+    const contactMarker = document.getElementById('contact-nav-widget');
 
     const homeMenu = document.getElementById('home-text');
     const projectsMenu = document.getElementById('projects-text');
@@ -274,6 +320,7 @@
     const homeCircle = document.getElementById('circle-home');
     const projectsCircle = document.getElementById('circle-projects');
     const contactCircle = document.getElementById('circle-contact');
+    
     let isHomeVisible = true;
     let isProjectsVisible = false;
     let isContactVisible = false;
@@ -288,36 +335,18 @@
 
     // BUG WHEN CLICKING AND NOT SCRLOIING IT AINT UPDATING
     document.addEventListener('scroll', function () {
-      isHomeVisible = isInViewport(home);
-      isProjectsVisible = isInViewport(projects);
-      isContactVisible = isInViewport(contact);
+      isHomeVisible = isInViewport(homeMarker);
+      isProjectsVisible = isInViewport(projectsMarker);
+      isContactVisible = isInViewport(contactMarker);
 
       if (isHomeVisible) {
-        homeMenu.style.color = "white";
-        projectsMenu.style.color = "transparent";
-        contactMenu.style.color = "transparent";
-
-        homeCircle.style.fill = "wheat";
-        projectsCircle.style.fill = "transparent";
-        contactCircle.style.fill = "transparent";
+        setNavHome();
       }
       else if (isContactVisible) {
-        homeMenu.style.color = "transparent";
-        projectsMenu.style.color = "transparent";
-        contactMenu.style.color = "white";
-
-        homeCircle.style.fill = "transparent";
-        projectsCircle.style.fill = "transparent";
-        contactCircle.style.fill = "wheat";
+        setNavContact();
       }
       else {
-        homeMenu.style.color = "transparent";
-        projectsMenu.style.color = "white";
-        contactMenu.style.color = "transparent";
-
-        homeCircle.style.fill = "transparent";
-        projectsCircle.style.fill = "wheat";
-        contactCircle.style.fill = "transparent";
+        setNavProjects();
       }
 
 

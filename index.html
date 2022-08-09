@@ -13,24 +13,21 @@
 
 <body style="font-family:Verdana;">
     <div>
-        <div id="home" class="fadeImg slide-container" style="background-color:#f1f1f1;">
+        <div class="fadeImg slide-container" style="background-color:#f1f1f1;">
             <img class="slide slide-img" src="./public/res/pictures/Firefly.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/CrystalLake.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/Werewolf.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/MayNight.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/Fisherman.png">
-            
+            <div id="home"></div>
             <div class="container-title-centered-h">HELLO;</div>
             <div class="container-title-centered-p">I AM MIHAI</div>
             <div class="container-title-centered-p">GAME PROGRAMMER, SOFTWARE DEVELOPER AND ARTIST</div>
         </div>
 
 
-
-
-
         <div class="separator"></div>
-        <div class="project-row" id="projects">
+        <div class="project-row">
             <div class="project-row">
                 <div class="side-cell">
                     <a href="https://play.google.com/store/apps/details?id=com.Zdev.Minesweeper&hl=en&gl=US">
@@ -61,7 +58,7 @@
                 </div>
             </div>
         </div>
-
+        <div id="projects"></div>
         <div class="separator"></div>
         <div class="project-row">
             <div class="project-row">
@@ -212,7 +209,7 @@
             <a href="https://linktr.ee/mihaizegheru"><i class="fa fa-external-link-square "></i></a>
         </div>
         </div>
-        <div class="contact"></div>
+      
 
         <div class="separator"></div>
         <div class="separator"></div>
@@ -277,6 +274,14 @@
     let isHomeVisible = true;
     let isProjectsVisible = false;
     let isContactVisible = false;
+
+    homeMenu.style.color = "white";
+    projectsMenu.style.color = "transparent";
+    contactMenu.style.color = "transparent";
+
+    homeCircle.style.fill = "wheat";
+    projectsCircle.style.fill = "transparent";
+    contactCircle.style.fill = "transparent";
 
     // BUG WHEN CLICKING AND NOT SCRLOIING IT AINT UPDATING
     document.addEventListener('scroll', function () {

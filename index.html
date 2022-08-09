@@ -13,21 +13,22 @@
 
 <body style="font-family:Verdana;">
     <div>
-        <div class="fadeImg slide-container" style="background-color:#f1f1f1;">
+        <div class="fadeImg slide-container" id="home" style="background-color:#f1f1f1;">
             <img class="slide slide-img" src="./public/res/pictures/Firefly.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/CrystalLake.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/Werewolf.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/MayNight.png">
             <img class="slide slide-img" style="display:none;" src="./public/res/pictures/Fisherman.png">
-            <div id="home"></div>
-            <div class="container-title-centered-h">HELLO;</div>
+
+            
+            <div class="container-title-centered-h"><div id="home-nav-widget"></div>HELLO;</div>
             <div class="container-title-centered-p">I AM MIHAI</div>
             <div class="container-title-centered-p">GAME PROGRAMMER, SOFTWARE DEVELOPER AND ARTIST</div>
         </div>
 
 
         <div class="separator"></div>
-        <div class="project-row">
+        <div class="project-row" id="projects">
             <div class="project-row">
                 <div class="side-cell">
                     <a href="https://play.google.com/store/apps/details?id=com.Zdev.Minesweeper&hl=en&gl=US">
@@ -58,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div id="projects"></div>
+        <div id="projects-nav-widget"></div>
         <div class="separator"></div>
         <div class="project-row">
             <div class="project-row">
@@ -159,6 +160,7 @@
         </div> 
 
         <div class="separator"></div>
+        <div class="separator"></div>
 
         <div class="side-nav">
           <a href="#home" class="home nav-text">
@@ -167,10 +169,7 @@
             </span>
             <svg class="circle">
               <circle id="circle-home" cx="0.6vw" cy="0.6vw" r="0.4vw"/> 
-
-            </svg> 
-
-
+            </svg>
           </a>
           <a href="#projects" class="projects">
             <span class="nav-text" id="projects-text">
@@ -179,8 +178,6 @@
             <svg class="circle">
               <circle id="circle-projects" cx="0.6vw" cy="0.6vw" r="0.4vw"/>  
             </svg> 
-
-
           </a>
           <a href="#contact" class="contact nav-text">
             <span class="nav-text" id="contact-text">
@@ -189,17 +186,16 @@
             <svg class="circle">
               <circle id="circle-contact" cx="0.6vw" cy="0.6vw" r="0.4vw"/> 
             </svg> 
-
-
           </a>
         </div>
 
+        <div class="separator"></div>
         <!-- Could work as an bout me -->
         <div id="contact">
           <div class="container-text-centered-h">CONTACT</div>
           <div class="container-text-centered-p">HEY, FOR MORE</div>
           <div class="container-text-centered-p">HERE ARE MY SOCIAL MEDIA ACCOUNTS!</div>
-
+          
           <div class="social-media-bar">
             <a href="https://www.instagram.com/mihai_zegheru/"><i class="fa fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100031466835172"><i class="fa fa-facebook"></i></a>
@@ -207,12 +203,19 @@
             <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
             <a href="https://github.com/MihaiZegheru"><i class="fa fa-github"></i></a>
             <a href="https://linktr.ee/mihaizegheru"><i class="fa fa-external-link-square "></i></a>
-        </div>
+          </div>
+        <div id="contact-nav-widget"></div>
+        
         </div>
       
 
         <div class="separator"></div>
         <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+
     </div>
 
 
@@ -260,9 +263,9 @@
     }
 
 
-    const home = document.getElementById('home');
-    const projects = document.getElementById('projects');
-    const contact = document.getElementById('contact');
+    const home = document.getElementById('home-nav-widget');
+    const projects = document.getElementById('projects-nav-widget');
+    const contact = document.getElementById('contact-nav-widget');
 
     const homeMenu = document.getElementById('home-text');
     const projectsMenu = document.getElementById('projects-text');

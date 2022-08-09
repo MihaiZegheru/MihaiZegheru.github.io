@@ -231,3 +231,61 @@ body {
   display: inline-block;
 }
 
+
+.side-nav a {
+  position: fixed;
+  left:87%;
+  padding: 1vw;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  color: transparent;
+  font-size: 1.3vw;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.side-nav a:hover .nav-text {
+  color: white !important;
+}
+
+.side-nav a:hover circle {
+  fill: wheat !important;
+}
+
+.home {
+  top: 3vw;
+}
+
+.projects {
+  top: 6vw;
+}
+
+.contact {
+  top: 9vw;
+}
+
+circle:hover {
+  fill: wheat !important;
+}
+
+circle {
+  fill: transparent;
+  stroke-width: 0.1vw;
+  stroke: white;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  left:80%;
+  top: 30%;
+}
+
+
+span {
+  display: block;
+  text-align: end;
+  position: absolute;
+}
+
+

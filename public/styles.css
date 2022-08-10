@@ -305,6 +305,14 @@ span {
   display: inline-block;
 }
 
+.project-showcase-phone-cell-middle {
+  position: relative;
+  width: 30vw; 
+  margin-right: 34vw;
+  margin-left: 34vw;
+  display: inline-block;
+}
+
 .project-showcase-landscape-cell-left {
   position: relative;
   width: 30vw; 

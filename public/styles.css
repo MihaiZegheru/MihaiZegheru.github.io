@@ -289,3 +289,22 @@ span {
 }
 
 
+.project-title-div {
+  margin-bottom: 10vh;
+  text-overflow: inherit;
+}
+
+.project-showcase-phone-cell-left {
+  position: relative;
+  width:25%; 
+  margin-left: 17%;
+  margin-right: 7.5%;
+  display:inline-block;
+}
+.project-showcase-phone-cell-right {
+  position: relative;
+  width:25%; 
+  margin-right: 17%;
+  margin-left: 7.5%;
+  display:inline-block;
+}

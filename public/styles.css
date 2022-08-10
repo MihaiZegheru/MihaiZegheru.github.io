@@ -143,10 +143,6 @@ body {
   float: left
 }
 
-
-
-
-
 .w3-left, .w3-right, .w3-badge {
   cursor: pointer; 
   clear: left; 
@@ -296,15 +292,30 @@ span {
 
 .project-showcase-phone-cell-left {
   position: relative;
-  width:25vw; 
+  width: 25vw; 
   margin-left: 16vw;
-  margin-right:7vw;
-  display:inline-block;
+  margin-right: 7vw;
+  display: inline-block;
 }
 .project-showcase-phone-cell-right {
   position: relative;
-  width:25vw; 
+  width: 25vw; 
   margin-right: 16vw;
   margin-left: 7vw;
-  display:inline-block;
+  display: inline-block;
 }
+
+.back-button {
+  cursor: pointer;
+  position: fixed;
+  display: block;
+  top: 7vw;
+  left: 7vw;
+  background-color: transparent;
+  border: 0;
+  color: aliceblue;
+  font-size: 1.7vw;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+

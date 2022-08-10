@@ -296,15 +296,15 @@ span {
 
 .project-showcase-phone-cell-left {
   position: relative;
-  width:25%; 
-  margin-left: 17%;
-  margin-right: 7.5%;
+  width:25vw; 
+  margin-left: 16vw;
+  margin-right:7vw;
   display:inline-block;
 }
 .project-showcase-phone-cell-right {
   position: relative;
-  width:25%; 
-  margin-right: 17%;
-  margin-left: 7.5%;
+  width:25vw; 
+  margin-right: 16vw;
+  margin-left: 7vw;
   display:inline-block;
 }

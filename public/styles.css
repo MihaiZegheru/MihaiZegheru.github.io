@@ -308,8 +308,8 @@ span {
 .project-showcase-phone-cell-middle {
   position: relative;
   width: 30vw; 
-  margin-right: 32vw;
-  margin-left: 32vw;
+  right: 33vw;
+  left: 33vw;
   display: inline-block;
 }
 

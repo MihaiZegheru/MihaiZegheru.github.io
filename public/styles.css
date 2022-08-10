@@ -286,7 +286,7 @@ span {
 
 
 .project-title-div {
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   text-overflow: inherit;
 }
 
@@ -305,6 +305,21 @@ span {
   display: inline-block;
 }
 
+.project-showcase-landscape-cell-left {
+  position: relative;
+  width: 30vw; 
+  margin-left: 14vw;
+  margin-right: 4vw;
+  display: inline-block;
+}
+.project-showcase-landscape-cell-right {
+  position: relative;
+  width: 30vw; 
+  margin-right: 14vw;
+  margin-left: 4vw;
+  display: inline-block;
+}
+
 .back-button {
   cursor: pointer;
   position: fixed;
@@ -317,5 +332,16 @@ span {
   font-size: 1.7vw;
   font-family: 'Courier New', monospace;
   font-weight: bold;
+}
+
+.container-text-centered-sub-h {
+  position: relative;
+  padding-top: 10%;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1vw;
 }
 

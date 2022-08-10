@@ -353,3 +353,24 @@ span {
   letter-spacing: 1vw;
 }
 
+.container-text-centered-p-footer{
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

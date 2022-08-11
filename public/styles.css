@@ -342,6 +342,10 @@ span {
   font-weight: bold;
 }
 
+.back-button:hover {
+  color: rgb(245, 179, 172);
+}
+
 .container-text-centered-sub-h {
   position: relative;
   padding-top: 10%;

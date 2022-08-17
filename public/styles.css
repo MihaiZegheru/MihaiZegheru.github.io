@@ -242,6 +242,7 @@ body {
 
 .side-nav a:hover .nav-text {
   color: white !important;
+  text-align: right;
 }
 
 .side-nav a:hover circle {
